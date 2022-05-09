@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sodien ir skaista diena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div class="full">
+            <div class="left">
+    <h1 class="klase">
+        Šis ir mans pirmais 2022.gada html dokuments
+    </h1>
+    <p> 
+        <h2>
+            Šis ir pirmais virsraksts
+            <!--paskaidrojums-->
+        </h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo urna, ornare et fringilla consectetur, sagittis ac metus. Proin nulla mi, condimentum porttitor risus non, efficitur vestibulum ex. Nullam imperdiet ut elit sed scelerisque. Aenean nec facilisis orci. Praesent dui nibh, sagittis fringilla hendrerit vulputate, aliquam non velit. Proin lobortis tortor sit amet orci interdum porttitor. <br> eleifend felis vitae velit iaculis molestie. Duis iaculis ut elit quis venenatis. Suspendisse eu iaculis velit, sit amet consequat velit. Donec a libero non eros pulvinar vulputate. Sed nec scelerisque mi. Proin sit amet hendrerit nisi. Aenean consectetur, augue a finibus volutpat, magna felis suscipit erat, a aliquam ipsum nulla eget urna.
+<h6>
+    Mazākais iespējamais 6 virsraksts
+</h6>
+Aenean consectetur, augue a finibus volutpat, magna felis suscipit erat, a aliquam ipsum nulla eget urna.
+    </p>
+<br>
+<h2 class="klase">
+    Šis ir <strong>k.kāds</strong> virsraksts
+</h2> 
+    <p class="klase">
+        Šī ir LU lapa 
+        <a href="https://www.lu.lv/" target="_blank">LINKS</a>
+  
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo urna, ornare et fringilla consectetur, sagittis ac metus. Proin nulla mi, condimentum porttitor risus non, efficitur vestibulum ex. Nullam imperdiet ut elit sed scelerisque. Aenean nec facilisis orci. Praesent dui nibh, sagittis fringilla hendrerit vulputate, aliquam non velit. Proin lobortis tortor sit amet orci interdum porttitor. Cras eleifend felis vitae velit iaculis molestie. Duis iaculis ut elit quis venenatis. Suspendisse eu iaculis velit, sit amet consequat velit. Donec a libero non eros pulvinar vulputate. Sed nec scelerisque mi. Proin sit amet hendrerit nisi. Aenean consectetur, augue a finibus volutpat, magna felis suscipit erat, a aliquam ipsum nulla eget urna.
+        
+        <h2>fona bilde</h2>
+        <img src="images/fona_bilde.jpg" width="30%" alt="fona bilde">\
+    </div>
+    <div right>
+        <br>
+        <img src="https://www.lu.lv/templates/LU.LV/Public/Images/ranked_badge_2022.svg" height="100px" alt="reitings">
+
+  <input id="vecums" maxlength="3">
+    <button id="poga">SPIED MANI</button>
+    
+    <p>Lietotāja vecums ir: <strong id="lietotajavecums"></strong>> </p>
+    
+<br>
+    <h3>Iepirkumu saraksts</h3>
+    <ul>
+        <li>piens</li>
+        <li>sula</li>
+        <li>maize</li>
+</ul>
+
+<h3>Recepte</h3>
+<ol>
+    <li>uzvāri ūdeni</li>
+    <li>tēja krūzē</li>
+    <li>ūdens krūzē</li>
+</ol>
+
+    </p>
+</div>
+</div>
+</body>
+<script>
+    document.getElementById("poga").onclick = function() {
+        var vecums = document.getElementById("vecums").value;
+        alert("Hello my frend! Tavs vecums ir " +  vecums);
+        document.getElementById("lietotajavecums").innerText = vecums;
+    };
+    </script>
+</html>
